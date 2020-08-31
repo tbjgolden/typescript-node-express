@@ -7,15 +7,15 @@ import json from '@rollup/plugin-json';
 export default {
   input: 'src/index.ts',
   output: {
-    file: 'rollup/index.js',
+    dir: 'rollup',
     format: 'cjs',
     sourcemap: true
   },
   plugins: [
-    resolve(),
+    resolve({ preferBuiltins: true }),
     commonjs({ extensions: ['.js', '.ts'] }),
     terser(),
-    typescript(),
+    typescript({ tsconfig: "./tsconfig.rollup.json" }),
     json()
   ]
 };

@@ -4,7 +4,7 @@ module.exports = {
   mode: 'production',
   target: 'node',
   entry: './src/index.ts',
-  devtool: 'inline-source-map',
+  devtool: 'source-map',
   module: {
     rules: [
       {

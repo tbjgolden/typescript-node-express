@@ -8,8 +8,8 @@
     "start:tsc": "node tsc/index.js",
     "build:webpack": "webpack",
     "start:webpack": "node webpack/index.js",
-    "build:rollup": "rollup -c",
-    "start:rollup": "// check for rollup dir"
+    "build:rollup": "rollup -c --silent",
+    "start:rollup": "node rollup/index.js"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^15.0.0",
