@@ -13,7 +13,7 @@ cd typescript-node-express
 yarn
 ```
 
-## Step 2 - Choosing
+## Step 2 - Choosing your bundler
 
 ### Option A - Using with `ts-node` for development and `webpack` for production (recommended)
 
@@ -61,7 +61,7 @@ yarn remove rollup @rollup/plugin-commonjs @rollup/plugin-json @rollup/plugin-no
   },
 ```
 
-## Usage
+## Step 3 - Usage
 
 * `yarn start`
   * nodemon watches for changes in the src directory, runs with ts-node
